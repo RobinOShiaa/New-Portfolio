@@ -14,16 +14,15 @@ export default function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANCE = {
-    description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum aliquid accusamus veniam harum iste dolor, repellat eos inventore sapiente explicabo nesciunt, aspernatur dolores nobis! Nostrum explicabo autem vitae hic consequuntur. Non molestiae earum nostrum voluptatibus nam illo, qui laborum. Esse nam quia eligendi! Consequatur laborum est magni velit distinctio fugit? Et fugit consequatur suscipit consectetur? Cupiditate quod consectetur inventore asperiores? Accusamus vel quia ipsam cum qui eaque, officia enim iusto necessitatibus a, est earum, ad repellendus atque molestias tempora voluptate! Harum unde magnam quisquam excepturi dolorem quaerat quibusdam,",
-
+    description : "Hello my name is Robin, I am an enthusiastic, self motivated and eager to learn, as well as evolve my current skill set in order to successfully complete any task given to me. I graduated from Dublin City University in 2020. I have a BSci in Computer Applications and Software Engineering. I am very much interested in all areas of my qualification and have a fine aptitude of experiences. I would consider myself to be a Full stack developer working primarily with my more favorable technologies ( Javascript, Typescript, React )",
     highlights: {
       heading: "Here are a Few Highlights",
       bullets: [
-        "fsdada",
-        "fasfasfasf",
-        "fafsadasdaga",
-        "dagasdasadg",
-        "gasfasfasgad",
+        "Full Stack Developer",
+        "Interactive Front End Applications",
+        "Building REST API",
+        "Managing database",
+        "React & React Native",
       ],
     },
   };

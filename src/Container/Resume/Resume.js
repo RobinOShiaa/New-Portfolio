@@ -52,70 +52,62 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
+    { skill: "JavaScript", ratingPercentage: 90 },
+    { skill: "TypeScript", ratingPercentage: 75 },
+    { skill: "React JS", ratingPercentage: 90 },
+    { skill: "React Native", ratingPercentage: 90 },
+    { skill: "Express JS", ratingPercentage: 90 },
+    { skill: "Node JS", ratingPercentage: 90 },
     { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Core Java", ratingPercentage: 65 },
+    { skill: "HTML / CSS", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 70 },
+
   ];
 
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"Dublin City University, Dublin"}
+        subHeading={"B.Sc COMPUTER APPLICATIONS & SOFTWARE ENGINEERING"}
+        fromDate={"2016"}
+        toDate={"2020"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Leaving Certificate"}
+        subHeading={"Belvedere College"}
+        fromDate={"2010"}
+        toDate={"2015"}
       />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
-      />
+
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"Dublin City University"}
+          subHeading={"Software Developer Intern"}
+          fromDate={"2019"}
+          toDate={"2019"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+          Worked as part of a project team to develop a system funded by Vista
+          Milk for automated web scraping of dairy produce of which was then
+          translated from CSV format to a SQL database. 
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+          A Django web framework was used to host a website to display each scraper's success or failure.
+          which were tested using Jenkins. Utilized Python, Django, Jenkins, Bash, Batch, Git, logging,
+Selenium, Beautiful, Soup, SQL, Pandas.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Agile scrum methods were done on a weekly basis.
           </span>
           <br />
         </div>
@@ -144,16 +136,16 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Farting"
-        description="I like to challenge my reflexes a lot while competing in farting games, pushing the fart and having interactive farting sessions excites me the most. The more it stinks the better"
+        heading="Projects"
+        description="I am constantly trying to excercise my current skillset aswell as learn new technologies along the way doing personal projects."
       />
       <ResumeHeading
-        heading="Farting"
-        description="I like to challenge my reflexes a lot while competing in farting games, pushing the fart and having interactive farting sessions excites me the most. The more it stinks the better"
+        heading="Gym And Movies"
+        description="I mainly like to watch movies on streaming platforms and go to the Gym when I can."
       />
       <ResumeHeading
-        heading="Farting"
-        description="I like to challenge my reflexes a lot while competing in farting games, pushing the fart and having interactive farting sessions excites me the most. The more it stinks the better"
+        heading="Going Out"
+        description="On the weekends, I like to hang out with my friends or go to web seminars and meetups on certain technology topics."
       />
     </div>,
   ];
