@@ -145,7 +145,7 @@ Selenium, Beautiful, Soup, SQL, Pandas.{" "}
       />
       <ResumeHeading
         heading="Going Out"
-        description="On the weekends, I like to hang out with my friends or go to web seminars and meetups on certain technology topics."
+        description="On the weekends, I like to hang out with my friends or go to web seminars and meetups on certain technological topics."
       />
     </div>,
   ];
