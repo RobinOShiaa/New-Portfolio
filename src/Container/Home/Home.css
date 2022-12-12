@@ -1,0 +1,11 @@
+.home-container {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 670px;
+    background: url('./home-image.jpg') 70% no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 55%;
+    position: relative;
+}

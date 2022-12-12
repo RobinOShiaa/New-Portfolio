@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700');
+
+.popup {
+  position : fixed;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  background-color: rgba(0,0,0,0.8);
+  padding-top : 15;
+  z-index: 22000000000;
+}
+
+@keyframes drop {
+  0% {opacity: 0}
+  70% {transform: translateY(700px)}
+  100% {transform: translateY(650px); opacity: 1;}
+  
+}
+
+.console-form {
+  animation : drop 0.5s ease forwards;
+  background-color:#1c1f25;
+  width: 50vw;
+  z-index : 10000;
+  height : 50vh;
+  top : -1200px;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  position : fixed;
+  min-height: 50vh;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+  line-height: 1em;
+  display: block;
+}
+
+.console-form #taskbar {
+    background-color: var(--cf-taskbar-bg-color);
+    padding: 8px 12px;
+    text-align: center;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.05);
+    color: var(--cf-taskbar-text-color);
+}
+
+.console-form  #title {
+    text-align: center;
+    display: inline-block;
+    margin: 0 0;
+}
+.console-form .buttons {
+      list-style-type: none;
+      display: inline-block;
+      position: relative;
+      float: left;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+}
+      
+.console-form .button {
+    display: inline-block;
+    width: var(--b-rad);
+    height: var(--b-rad);
+    border-radius: 16px;
+    padding: 0;
+    margin: 0 2px;
+    background-color: red;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#red {
+    background-color: var(--cf-red);
+    cursor: pointer;
+}
+
+#green:hover,#yellow:hover,#red:hover {
+  transform: scale(1.2);
+}
+
+#green {
+    background-color: var(--cf-green);
+
+}
+#yellow {
+    background-color: var(--cf-yellow);
+}
+.console-form  #buttons2 {
+    float: right;
+    visibility: hidden;
+}
+
+#console {
+  padding: 16px;
+  overflow-y: scroll;
+  height: 95%;
+  position: relative;
+}
+
+.cf-container {
+    padding-bottom: 64px;
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+
+.cf-line-row {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 3px 0;
+    position: relative;
+    font-size: 1.5em;
+    color: #cccccc;
+    font-family: 'Source Code Pro';
+    display: flex;
+}
+
+@media screen and (min-width: 0) and (max-width: 550px) {
+.cf-line-row {
+    flex-direction: column;
+}
+}
+
+label, .label {
+position: relative;
+top: 0;
+color: var(--cf-input-label-color);
+margin-top: 0.5em;
+margin-bottom: 0 !important; 
+text-align: left;
+}
+
+label, .label ::before {
+    content: '$';
+}
+label, .label:after {
+    content: '> '
+}
+
+@media screen and (min-width: 0) and (max-width: 550px) {
+    label, .label {
+        width: 100%;
+    }
+}
+input[type="text"],input[type="email"],input[type="password"], textarea {
+  background-color: transparent;
+  border: none;
+  padding: 3px 6px;
+  color: var(--cf-input-color);
+  font-family: inherit;
+  flex-grow: 1;
+}
+
+input[type="text"],input[type="email"],input[type="password"], textarea:focus,
+input[type="text"],input[type="email"],input[type="password"], textarea:active,
+input[type="text"],input[type="email"],input[type="password"], textarea:hover {
+  background-color: rgba(255, 255, 255, 0.025);
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="text"],input[type="email"],input[type="password"], textarea:selection {
+  background-color: white;
+  color: var(--cf-bg-color);
+}
+
+.cf-col {
+  display: inline-block;
+  position: relative;
+}
+
+.cf-col #text-col {
+  border-left: 2px dashed #3a3a3a;
+  margin-left: 4px;
+  flex-grow: 1;
+}
+
+.cf-col label {
+  position: relative;
+  top: 0;
+}
+
+#message-row {
+  margin-top: 5px;
+}
+#submit-row {
+  text-align: left !important;
+}
+#submit-label {
+  display: inline-block;
+}
+
+.cf-button {
+  font-family: 'Source Code Pro';
+  color: #cccccc;
+  background-color: transparent;
+  border: none;
+}
+
+.cf-button:hover {
+  cursor: pointer;
+}
+
+.cf-button:focus,
+.cf-button:hover {
+  background-color: var(--cf-input-color);
+  color: var(--cf-bg-color);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+
+.output-label {
+  position: relative;
+  top: 0;
+}
+.output-label::before {
+    content: '$';
+}
+.output-label:after {
+    content: '> '
+}
+
+.output-text {
+  position: relative;
+  top: 0.5em;
+  margin-left: 12px;
+}
+.output-line {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 3px 0;
+  margin: 16px 0;
+  position: relative;
+  font-size: 1.5em;
+  font-family: 'Source Code Pro';
+  display: flex;
+  text-align: left;
+}
+
+.output-line .output-error {
+    color: var(--cf-red);
+}
+
+.output-text,.output-label {
+    color: var(--cf-red);
+}
+.output-text,.output-label .output-success {
+    color: var(--cf-green);
+}
+
+.output-text,.output-label .output-success div {
+  color: var(--cf-green);
+}
+.output-info {
+  color: #cccccc;
+}
+
+.output-info div {
+  color: #cccccc;
+}
+.cf-button {
+  font-family: 'Source Code Pro';
+  color: #cccccc;
+  background-color: transparent;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.cf-button:hover {
+  cursor: pointer;
+}
+
+.cf-button:focus,
+.cf-button:hover {
+  background-color: var(--cf-input-color);
+  color: var(--cf-bg-color);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background: lighten(var(--cf-bg-color, 8%));
+}
+::-webkit-scrollbar-thumb {
+background: lighten(var(--cf-bg-color, 25%));
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: lighten(var(--cf-taskbar-bg-color, 15%));
+}
+
+
+
+
